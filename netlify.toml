@@ -1,0 +1,11 @@
+# netlify.toml
+
+[build]
+  command = "ng build --configuration production"
+  publish = "dist/testlo-shop"
+
+# Manejo de rutas de Angular (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
