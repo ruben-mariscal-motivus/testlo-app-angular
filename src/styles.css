@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+   themes: dark --default;
+ }
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+.font-montserrat {
+  font-family: 'MontserratMedium', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
